@@ -20,4 +20,17 @@ struct node{
     bool isEq(string val){
         return this->val==val;
     }
+    void setData(int position){
+        pos[occurence++]=position;
+    }
+    void showData(){
+        cout << "String Value: " << val << "Frequency of occurence: " << occurence << "Positions: ";
+        for(int i=0;i<20;i++){
+            if(pos[i]==0)
+                break;
+            else
+                cout << pos[i] << " ";
+        }
+        cout << endl;
+    }
 };
